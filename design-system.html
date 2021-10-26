@@ -19,7 +19,6 @@
 
       <section id="colors">
         <h2 class="numbered-title"><span>01</span> Colors</h2>
-
         <div class="flex">
           <div style="flex-grow: 1">
             <div style="padding: 3rem 1rem 1rem; border: 1px solid white">
@@ -28,36 +27,33 @@
             <p><span class="txt-light">RGB</span> 11, 13, 23</p>
             <p><span class="txt-light">HSL</span> 230, 35%, 7%</p>
           </div>
-
           <div style="flex-grow: 1">
             <div
               class="bg-light txt-dark"
               style="padding: 3rem 1rem 1rem; border: 1px solid white"
             >
-              #0B0D17
+              #D0D6F9
             </div>
-            <p><span class="txt-light">RGB</span> 11, 13, 23</p>
-            <p><span class="txt-light">HSL</span> 230, 35%, 7%</p>
+            <p><span class="txt-light">RGB</span> 208, 214, 249</p>
+            <p><span class="txt-light">HSL</span> 231, 777%, 90%</p>
           </div>
-
           <div style="flex-grow: 1">
             <div
               class="bg-white txt-dark"
               style="padding: 3rem 1rem 1rem; border: 1px solid white"
             >
-              #0B0D17
+              #FFFFFF
             </div>
-            <p><span class="txt-light">RGB</span> 11, 13, 23</p>
-            <p><span class="txt-light">HSL</span> 230, 35%, 7%</p>
+            <p><span class="txt-light">RGB</span> 255, 255, 255</p>
+            <p><span class="txt-light">HSL</span> 0, 0%, 100%</p>
           </div>
         </div>
       </section>
 
       <section id="typography" style="margin: 4rem 0">
         <h2 class="numbered-title"><span>02</span> Typography</h2>
-
         <div class="flex">
-          <div style="flex-basis: 100%">
+          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
             <div>
               <p class="txt-light">Heading 1 - Bellefair Regular - 150px</p>
               <p class="fs-900 ff-serif uppercase">Earth</p>
@@ -82,29 +78,33 @@
               <p
                 class="txt-light fs-500 ff-sans-cond uppercase letter-spacing-1"
               >
-                Sp, you want to travel to space
+                So, you want to travel to space
               </p>
             </div>
           </div>
 
-          <div style="flex-basis: 100%">
+          <div class="flow" style="flex-basis: 100%; --flow-space: 4rem">
             <div>
               <p class="txt-light">Subheading 1 - Bellefair Regular - 28px</p>
-              <p class="fs-400">384,400 km</p>
+              <p class="fs-500 ff-serif uppercase">384,400 km</p>
             </div>
             <div>
               <p class="txt-light">
                 Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Characters
                 Space
               </p>
-              <p class="fs-300 ff-sans-cond letter-spacing-2">Avg. Distance</p>
+              <p class="fs-400 ff-sans-cond letter-spacing-3 uppercase">
+                Avg. Distance
+              </p>
             </div>
             <div>
               <p class="txt-light">
                 Nav Text - Barlow Condensed Regular - 16px - 2.7 Characters
                 Space
               </p>
-              <p class="fs-200 ff-sans-cond letter-spacing-3">Europa</p>
+              <p class="fs-300 ff-sans-cond letter-spacing-2 uppercase">
+                Europa
+              </p>
             </div>
             <div>
               <p class="txt-light">Body Text</p>
@@ -124,6 +124,109 @@
                 Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
                 dapibus id, mattis vel, nisi.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow" id="interactive-elements">
+        <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
+
+        <!-- Navigation -->
+        <div>
+          <nav>
+            <ul class="primary-navigation underline-indicators flex">
+              <li class="active">
+                <a class="uppercase txt-white letter-spacing-2" href="#"
+                  ><span>00</span> Active</a
+                >
+              </li>
+              <li>
+                <a class="uppercase txt-white letter-spacing-2" href="#"
+                  ><span>01</span> Hovered</a
+                >
+              </li>
+              <li>
+                <a class="uppercase txt-white letter-spacing-2" href="#"
+                  ><span>02</span> Idle</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex">
+          <div style="margin-top: 5rem">
+            <!-- Explore button -->
+            <a href="#" class="large-button uppercase ff-serif txt-dark fs-600">
+              Explore
+            </a>
+          </div>
+
+          <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem">
+            <!-- Tabs -->
+            <div class="flex underline-indicators tab-list">
+              <button
+                aria-selected="true"
+                class="
+                  uppercase
+                  txt-light
+                  bg-dark
+                  letter-spacing-2
+                  ff-serif-cond
+                "
+              >
+                Moon
+              </button>
+              <button
+                aria-selected="false"
+                class="
+                  uppercase
+                  txt-light
+                  bg-dark
+                  letter-spacing-2
+                  ff-serif-cond
+                "
+              >
+                Mars
+              </button>
+              <button
+                aria-selected="false"
+                class="
+                  uppercase
+                  txt-light
+                  bg-dark
+                  letter-spacing-2
+                  ff-serif-cond
+                "
+              >
+                Europa
+              </button>
+            </div>
+            <!-- Dots -->
+            <div class="flex dot-indicators">
+              <button aria-selected="true">
+                <span class="sr-only">Slide title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">Slide title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">Slide title</span>
+              </button>
+            </div>
+
+            <!-- Numbers -->
+            <div class="flex numbers-indicators" style="flex-direction: column">
+              <button aria-selected="true" class="bg-dark txt-white ff-serif">
+                1
+              </button>
+              <button aria-selected="false" class="bg-dark txt-white ff-serif">
+                2
+              </button>
+              <button aria-selected="false" class="bg-dark txt-white ff-serif">
+                3
+              </button>
             </div>
           </div>
         </div>
